@@ -7,7 +7,6 @@ include 'PDOConection.php';
  try {
     $stmt -> execute();
     $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
-    echo count($result);
     echo "<link rel='stylesheet' href='..\css\style.css'>";
     echo "<table>
     <thead>
@@ -45,6 +44,6 @@ include 'PDOConection.php';
     }
     echo "</table>";
  } catch (\Throwable $th) {
-    //throw $th;
+   echo "Error".$th;
  }
 ?>
