@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css\style.css">
+    <title>lab1</title>
+</head>
+<body>
+    <div>
+        <!-- <form action="PHP\publisher.php">
+            <input type="submit" value="ok">
+        </form> -->
+
+        <form action="PHP\publisher.php">
+         <label for="publisher">Choose publisher</label>
+            <select name="publisher" id="publisher">
+                <option value="Генеза">Генеза</option>
+             <option value="Forbes Inc">Forbes Inc</option>
+             <option value="Махаон">Махаон</option>
+              <option value="ВЦ «Академія»">ВЦ «Академія»</option>
+             <option value="The New York Times Company">The New York Times Company</option>
+             <option value="Viking">Viking</option>
+              <option value="Neoclassic">Neoclassic</option>
+            <option value="Азбука">Азбука</option>
+    </select>
+    <input type="submit" value="Шукати">
+    </form>
+    </div>
+  
+
+    <div>
+        <a>Choose period of publish</a>
+        <form action="PHP\period.php">
+        <label for="from">from</label>
+        <select name="from" id="from">
+            <option value="2021">2021</option>
+            <option value="2018">2018</option>
+            <option value="2005">2005</option>
+            <option value="2015">2015</option>
+            <option value="2020">2020</option>
+            <option value="1986">1986</option>
+            <option value="1980">1980</option>
+            <option value="1952">1952</option>
+            <option value="1867">1867</option>
+        </select>
+        
+        <label for="to">to</label>
+       <select name="to" id="to">
+        <option value="2021">2021</option>
+        <option value="2018">2018</option>
+        <option value="2005">2005</option>
+        <option value="2015">2015</option>
+        <option value="2020">2020</option>
+        <option value="1986">1986</option>
+        <option value="1980">1980</option>
+        <option value="1952">1952</option>
+        <option value="1867">1867</option>
+       </select>
+       <input type="submit" value="Шукати">
+        </form>
+    </div>
+
+    <div>
+        <form action="PHP\author.php">
+        <label for="author">Choose author</label>
+        <select name="author" id="author">
+            <option value="Уварова Г.">Уварова Г.</option>
+            <option value="Forbes(A)">Forbes(A)</option>
+            <option value="Пестушко В.">Пестушко В.</option>
+            <option value="Джоан Роулинг">Джоан Роулинг</option>
+            <option value="Киевский вестник(А)">Киевский вестник(А)</option>
+            <option value="New York Times(A)">New York Times(A)</option>
+            <option value="Стивен Кинг">Стивен Кинг</option>
+            <option value="Эрнест Хемингуэй">Эрнест Хемингуэй</option>
+            <option value="Лев Толстой">Лев Толстой</option>
+        </select>
+        <input type="submit" value="Шукати">
+    </form>
+    </div>
+    
+</body>
+
+</html>

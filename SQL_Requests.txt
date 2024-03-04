@@ -1,0 +1,10 @@
+вивід книг зазначеного видавництва:
+SELECT * FROM `literature` WHERE PUBLISHER = 'Генеза' AND LITERATE = 'Book';
+
+вивід інформації про книжки журнали і газети опублікованих за вказаний часовий період
+SELECT * FROM `literature` WHERE YEAR BETWEEN 2018 AND 2021 AND LITERATE IN ('Book', 'Journal', 'Newspaper');
+
+
+вивід інформації про книги зазначеного автора:
+
+SELECT literature.*, author.NAME FROM `literature` JOIN author ON literature.ID = author.Id WHERE author.NAME = 'Джоан Роулинг';
